@@ -1,0 +1,76 @@
+.table_row {
+	cursor: pointer;
+}
+
+.title {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.title_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+
+.change_view {
+	display: flex;
+	justify-content: space-between;
+
+	&_item {
+		margin-right: 10px;
+		cursor: pointer;
+		&:hover {
+			color: #3333FF;
+		}
+	}
+}
+
+.table {
+	font-size: 16px;
+}
+
+.sort_table {
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px !important;
+	&.asc::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		background-image: url('../../img/icons/down-arrow.svg');
+		position: absolute;
+    top: 19px;
+    left: 10px;
+	}
+	&.desc::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		background-image: url('../../img/icons/drop-up-arrow.svg');
+		position: absolute;
+    top: 19px;
+    left: 10px;
+	}
+}
+
+.button {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	cursor: pointer;
+	outline: none !important;
+}

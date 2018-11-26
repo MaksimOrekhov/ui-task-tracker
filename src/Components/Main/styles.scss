@@ -1,0 +1,105 @@
+* {
+	font-family: Helvetica, sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title {
+	text-align: left;
+	font-size: 2em;
+	padding-left: 20px;
+	margin: 0;
+	font-weight: 400;
+	color: #fff;
+}
+
+.text {
+	text-align: left;
+	display: block;
+	font-size: 1em;
+	padding-left: 20px;
+	margin-top: 8px;
+	color: #fff;
+}
+
+.button {
+	background-color: #0070D2;
+	border-radius: 20px;
+	margin-left: 25px;
+	margin-top: 20px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.50);
+	border: 0px solid transparent;
+	padding: 5px 11px;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 13px;
+	&:hover {
+	animation: tada 1s;
+	}
+}
+
+@media (min-width: 692px) { // tablets
+	.container {
+		width: 670px;
+	}
+
+	.title {
+		font-size: 2.5em;
+	}
+
+	.text {
+		max-width: 100%;
+		font-size: 2.3em;
+	}
+}
+
+@media (min-width: 944px) {
+	.container {
+		width: 924px;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 3em;
+	}
+
+	.text {
+		max-width: 100%;
+	}
+
+	.button {
+		font-size: 18px;
+		padding: 12px 24px;
+	}
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+

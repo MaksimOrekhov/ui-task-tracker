@@ -1,0 +1,29 @@
+.task_title {
+	margin-top: 30px;
+}
+
+.task_details {
+	margin-top: 20px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0;
+}
+
+.task_description {
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0;
+}
+
+.button {
+	margin-top: 40px;
+	border-radius: 4px;
+	padding: 10px;
+	background-color: #3597DB;
+	cursor: pointer;
+	color: #fff;
+	border-color: transparent;
+	&:active {
+		outline: none;
+	}
+	
+}
